@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus'
 
 // 创建 axios 实例
 const service = axios.create({
-    baseURL: 'http://localhost:3000', // 根据实际情况调整
+    baseURL: process.env.VUE_APP_API_URL || 'https://phone-sales-backend.vercel.app',
     timeout: 5000
 })
 
