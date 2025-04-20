@@ -74,10 +74,10 @@
         </div>
         <div class="form-item" v-if="isLogin">
           <div class="captcha-container">
-            <input 
-              type="text" 
-              v-model="captcha" 
-              placeholder="验证码" 
+            <input
+              type="text"
+              v-model="captcha"
+              placeholder="验证码"
               @focus="handleFocus('captcha')"
               @blur="handleBlur('captcha')"
               :class="{ 'focused': focusedInput === 'captcha' }"
